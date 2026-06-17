@@ -9,8 +9,11 @@
 <meta property="og:title" content="BARBA ROJA — Barbería & Academia">
 <meta property="og:description" content="Barbería y academia profesional de alto nivel en Formosa. Salón masculino, cortes de precisión y formación certificada.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#050505">
+<meta property="og:image" content="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto,w_1200/v1781640052/IMG_7712_hnf4wi.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -28,7 +31,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
 
   body {
     background: var(--black);
@@ -503,6 +506,9 @@
   }
 
   @media (max-width: 768px) {
+    /* ─ Texturas decorativas: invisibles a este tamaño, se ocultan para ahorrar datos ─ */
+    .decor-bg { display: none; }
+
     /* ─ Layout base ─ */
     .container { padding: 0 20px; }
     .section-pad { padding: 64px 0; }
@@ -715,7 +721,7 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781620924/IMG_7702_emzbic_gdcgpx.png" alt="BARBA ROJA" class="nav-logo-img">
+    <img src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781620924/IMG_7702_emzbic_gdcgpx.png" alt="BARBA ROJA" class="nav-logo-img">
   </a>
   <ul class="nav-links">
     <li><a href="#services">Servicios</a></li>
@@ -746,8 +752,8 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline>
-      <source src="https://res.cloudinary.com/dpiavcukm/video/upload/v1781640075/insta_video_4157_c65qz0.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline preload="auto" poster="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto,w_1200/v1781640052/IMG_7712_hnf4wi.jpg">
+      <source src="https://res.cloudinary.com/dpiavcukm/video/upload/q_auto/v1781640075/insta_video_4157_c65qz0.mp4" type="video/mp4">
     </video>
   </div>
   <div class="hero-overlay"></div>
@@ -802,12 +808,12 @@
 
 <!-- ABOUT -->
 <section id="about" class="section-pad" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7711_l7atv4.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7711_l7atv4.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:1;">
     <div class="about-grid">
       <div class="about-media reveal-left">
         <div class="about-img-wrap">
-          <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654347/IMG_7722_pnfnsg.jpg" alt="Interior Barba Roja">
+          <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654347/IMG_7722_pnfnsg.jpg" alt="Interior Barba Roja">
         </div>
         <div class="about-img-accent">
           <span class="about-stat-num">100%</span>
@@ -849,7 +855,7 @@
 
 <!-- SERVICES -->
 <section id="services" class="section-pad" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7708_sdsbm8.jpg');background-size:cover;background-position:center;opacity:0.08;z-index:0;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7708_sdsbm8.jpg');background-size:cover;background-position:center;opacity:0.08;z-index:0;"></div>
   <div class="container" style="position:relative;z-index:1;">
       <div class="t-label" style="margin-bottom:12px;">Nuestros Servicios</div>
       <h2 class="t-title">Precisión<br><span class="gold">en cada detalle</span></h2>
@@ -921,10 +927,10 @@
 
 <!-- WHY BALENCIA -->
 <section id="why" style="background:var(--black2);position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7712_hnf4wi.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7712_hnf4wi.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;"></div>
   <div class="why-wrap" style="max-width:1200px;margin:0 auto;position:relative;z-index:1;">
     <div class="why-visual">
-      <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7712_hnf4wi.jpg" alt="Barba Roja" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0.75;">
+      <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7712_hnf4wi.jpg" alt="Barba Roja" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0.75;">
     </div>
     <div class="why-content">
       <div class="reveal">
@@ -976,7 +982,7 @@
 
 <!-- ACADEMY -->
 <section id="academy" class="section-pad" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7709_om8fmu.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7709_om8fmu.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;"></div>
   <div class="container" style="position:relative;z-index:1;">
     <div class="academy-hero-text reveal">
       <div class="t-label" style="margin-bottom:12px;">Academia Profesional</div>
@@ -984,7 +990,7 @@
       <p class="t-body" style="margin-top:20px;">Aprendé barbería desde cero o perfeccioná tu técnica con formación profesional, instructores en actividad y certificación oficial.</p>
     </div>
     <!-- NIVELES -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px;" class="reveal">
+    <div class="niveles-grid reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px;">
 
       <!-- NIVEL 1 -->
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(199,165,106,0.15);border-radius:4px;padding:32px 28px;display:flex;flex-direction:column;gap:16px;">
@@ -1109,7 +1115,7 @@
       <div class="t-label" style="margin-bottom:16px;text-align:center;">Conocé las modalidades</div>
       <div id="videoThumb" onclick="openVideoFullscreen()" style="position:relative;width:100%;max-width:480px;margin:0 auto;border-radius:4px;overflow:hidden;border:1px solid rgba(199,165,106,0.2);box-shadow:0 8px 40px rgba(0,0,0,0.5);cursor:pointer;">
         <!-- Thumbnail estático del video -->
-        <video id="acadVideoThumb" src="https://res.cloudinary.com/dpiavcukm/video/upload/v1781654360/insta_video_18294_yw5l7u.mp4" style="width:100%;display:block;object-fit:cover;pointer-events:none;" preload="metadata" muted playsinline></video>
+        <video id="acadVideoThumb" src="https://res.cloudinary.com/dpiavcukm/video/upload/q_auto/v1781654360/insta_video_18294_yw5l7u.mp4" style="width:100%;display:block;object-fit:cover;pointer-events:none;" preload="metadata" muted playsinline></video>
         <!-- Overlay oscuro -->
         <div style="position:absolute;inset:0;background:rgba(5,5,5,0.35);"></div>
         <!-- Botón play -->
@@ -1131,7 +1137,7 @@
       <button onclick="closeVideoFullscreen()" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;z-index:10;">
         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
-      <video id="acadVideoFull" src="https://res.cloudinary.com/dpiavcukm/video/upload/v1781654360/insta_video_18294_yw5l7u.mp4" controls playsinline style="max-width:100%;max-height:90vh;border-radius:4px;box-shadow:0 0 60px rgba(0,0,0,0.8);" onclick="event.stopPropagation()"></video>
+      <video id="acadVideoFull" src="https://res.cloudinary.com/dpiavcukm/video/upload/q_auto/v1781654360/insta_video_18294_yw5l7u.mp4" controls playsinline style="max-width:100%;max-height:90vh;border-radius:4px;box-shadow:0 0 60px rgba(0,0,0,0.8);" onclick="event.stopPropagation()"></video>
     </div>
 
     <script>
@@ -1161,7 +1167,7 @@
     <!-- INSTRUCTOR -->
     <div class="instructor-card reveal" style="margin-top:64px;">
       <div class="instructor-img-wrap">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654349/IMG_7721_qyjopf.jpg" alt="Instructor Barba Roja">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654349/IMG_7721_qyjopf.jpg" alt="Instructor Barba Roja">
         <div class="instructor-img-overlay"></div>
       </div>
       <div class="instructor-info">
@@ -1188,44 +1194,44 @@
     <div class="gallery-grid reveal">
       <!-- 1: grande, span 5 col / 2 rows -->
       <div class="gallery-item gi-1">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7712_hnf4wi.jpg" alt="Corte Premium">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7712_hnf4wi.jpg" alt="Corte Premium">
         <div class="gallery-item-overlay"><span class="gallery-tag">Corte Premium</span></div>
       </div>
       <!-- 2 -->
       <div class="gallery-item gi-2">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7708_sdsbm8.jpg" alt="Degradado">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7708_sdsbm8.jpg" alt="Degradado">
         <div class="gallery-item-overlay"><span class="gallery-tag">Degradado</span></div>
       </div>
       <!-- 3 -->
       <div class="gallery-item gi-3">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7709_om8fmu.jpg" alt="Diseño Barba">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7709_om8fmu.jpg" alt="Diseño Barba">
         <div class="gallery-item-overlay"><span class="gallery-tag">Diseño Barba</span></div>
       </div>
       <!-- 4 -->
       <div class="gallery-item gi-4">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7710_l8fysb.jpg" alt="Skin Fade">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7710_l8fysb.jpg" alt="Skin Fade">
         <div class="gallery-item-overlay"><span class="gallery-tag">Skin Fade</span></div>
       </div>
       <!-- 5 -->
       <div class="gallery-item gi-5">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640052/IMG_7712_hnf4wi.jpg" alt="Corte Clásico">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640052/IMG_7712_hnf4wi.jpg" alt="Corte Clásico">
         <div class="gallery-item-overlay"><span class="gallery-tag">Corte Clásico</span></div>
       </div>
       <!-- 6: video, span 4 col / 2 rows -->
       <div class="gallery-item gi-6" style="position:relative;">
-        <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85);">
-          <source src="https://res.cloudinary.com/dpiavcukm/video/upload/v1781640075/insta_video_4157_c65qz0.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline poster="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto,w_700/v1781640052/IMG_7708_sdsbm8.jpg" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85);">
+          <source src="https://res.cloudinary.com/dpiavcukm/video/upload/q_auto/v1781640075/insta_video_4157_c65qz0.mp4" type="video/mp4">
         </video>
         <div class="gallery-item-overlay"><span class="gallery-tag">En el Studio</span></div>
       </div>
       <!-- 7 -->
       <div class="gallery-item gi-7">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7709_om8fmu.jpg" alt="Studio">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7709_om8fmu.jpg" alt="Studio">
         <div class="gallery-item-overlay"><span class="gallery-tag">El Studio</span></div>
       </div>
       <!-- 8: placeholder ya que son 7 medios, reutilizo foto 1 -->
       <div class="gallery-item gi-8">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7710_l8fysb.jpg" alt="BARBA ROJA">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7710_l8fysb.jpg" alt="BARBA ROJA">
         <div class="gallery-item-overlay"><span class="gallery-tag">BARBA ROJA</span></div>
       </div>
     </div>
@@ -1240,7 +1246,7 @@
 
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="section-pad" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7710_l8fysb.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7710_l8fysb.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:1;">
     <div class="testi-header reveal">
       <div class="t-label" style="margin-bottom:12px;">Lo que dicen</div>
@@ -1338,16 +1344,16 @@
       <div class="t-label" style="margin-bottom:20px;text-align:center;">Lo que dicen nuestros alumnos 💬</div>
       <div class="screenshots-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(199,165,106,0.12);box-shadow:0 4px 20px rgba(0,0,0,0.4);">
-          <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654349/IMG_7720_junsra.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
+          <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654349/IMG_7720_junsra.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
         </div>
         <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(199,165,106,0.12);box-shadow:0 4px 20px rgba(0,0,0,0.4);">
-          <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654349/IMG_7718_gckvcb.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
+          <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654349/IMG_7718_gckvcb.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
         </div>
         <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(199,165,106,0.12);box-shadow:0 4px 20px rgba(0,0,0,0.4);">
-          <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654349/IMG_7719_te8k5s.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
+          <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654349/IMG_7719_te8k5s.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
         </div>
         <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(199,165,106,0.12);box-shadow:0 4px 20px rgba(0,0,0,0.4);">
-          <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781654349/IMG_7717_puur6s.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
+          <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781654349/IMG_7717_puur6s.jpg" alt="Reseña cliente" style="width:100%;display:block;object-fit:cover;">
         </div>
       </div>
     </div>
@@ -1357,7 +1363,7 @@
 
 <!-- FAQ -->
 <section id="faq" class="section-pad" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7710_l8fysb.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
+  <div class="decor-bg" style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7710_l8fysb.jpg');background-size:cover;background-position:center;opacity:0.07;z-index:0;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:1;">
     <div class="faq-header reveal">
       <div class="t-label" style="margin-bottom:12px;">Preguntas Frecuentes</div>
@@ -1493,15 +1499,19 @@
 <div id="academyModal" class="acad-modal" onclick="handleModalClick(event)">
   <div class="acad-panel">
 
+    <!-- Botón cerrar: flota fijo arriba a la derecha durante todo el scroll -->
+    <div class="acad-close-wrap">
+      <button class="acad-close" onclick="closeAcademy()" aria-label="Cerrar">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
     <!-- Header -->
     <div class="acad-header">
       <div>
         <div class="t-label" style="margin-bottom:6px;">Academia Profesional</div>
         <div class="acad-title">Curso Profesional<br><span class="gold">de Barbería 💈</span></div>
       </div>
-      <button class="acad-close" onclick="closeAcademy()" aria-label="Cerrar">
-        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
     </div>
 
     <div class="acad-body">
@@ -1685,7 +1695,7 @@
   .acad-panel::after {
     content: '';
     position: absolute; inset: 0;
-    background-image: url('https://res.cloudinary.com/dpiavcukm/image/upload/v1781640053/IMG_7711_l7atv4.jpg');
+    background-image: url('https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781640053/IMG_7711_l7atv4.jpg');
     background-size: cover; background-position: center top;
     opacity: 0.08;
     pointer-events: none;
@@ -1693,6 +1703,13 @@
   }
   .acad-panel > * { position: relative; z-index: 1; }
   .acad-modal.open .acad-panel { transform: translateY(0); }
+
+  /* Wrapper de la X: altura 0, no empuja contenido, queda pegado arriba siempre */
+  .acad-close-wrap {
+    position: sticky; top: 0; z-index: 20;
+    height: 0; display: flex; justify-content: flex-end;
+    pointer-events: none;
+  }
 
   /* Panel drag handle visual */
   .acad-panel::before {
@@ -1705,26 +1722,27 @@
 
   .acad-header {
     display: flex; justify-content: space-between; align-items: flex-start;
-    padding: 20px 32px 0;
-    position: sticky; top: 0;
-    background: var(--black2);
+    padding: 20px 76px 20px 32px;
     border-bottom: 1px solid rgba(199,165,106,0.1);
-    padding-bottom: 20px;
-    z-index: 1;
   }
   .acad-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(28px, 6vw, 40px);
-    line-height: 1; letter-spacing: 0.04em;
+    line-height: 1.1; letter-spacing: 0.04em;
     color: var(--white);
   }
   .acad-close {
-    width: 36px; height: 36px; border-radius: 50%;
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(199,165,106,0.2);
-    color: var(--grey); cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: all 0.25s; flex-shrink: 0; margin-top: 4px;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(10,10,10,0.7);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(199,165,106,0.35);
+    color: var(--grey-light); cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: all 0.25s; flex-shrink: 0;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    pointer-events: all;
+    margin: 14px 20px 0 0;
   }
-  .acad-close:hover { background: rgba(199,165,106,0.12); color: var(--gold); border-color: var(--gold); }
+  .acad-close:hover { background: rgba(199,165,106,0.18); color: var(--gold); border-color: var(--gold); }
 
   .acad-body { padding: 28px 32px 40px; display: flex; flex-direction: column; gap: 0; }
 
@@ -1772,9 +1790,10 @@
   .acad-cta-btn { width: 100%; justify-content: center; padding: 18px 24px; font-size: 14px; }
 
   @media (max-width: 480px) {
-    .acad-header { padding: 16px 20px 16px; }
+    .acad-header { padding: 18px 64px 16px 20px; }
     .acad-body { padding: 20px 20px 36px; }
     .acad-details-grid { grid-template-columns: 1fr 1fr; }
+    .acad-close-wrap .acad-close { margin: 12px 14px 0 0; }
   }
 </style>
 
@@ -1783,7 +1802,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="footer-logo">
-        <img src="https://res.cloudinary.com/dpiavcukm/image/upload/v1781620924/IMG_7702_emzbic_gdcgpx.png" alt="BARBA ROJA" class="footer-logo-img">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dpiavcukm/image/upload/f_auto,q_auto/v1781620924/IMG_7702_emzbic_gdcgpx.png" alt="BARBA ROJA" class="footer-logo-img">
       </div>
       <p class="footer-tagline">Barbería & Academia. Salón masculino de precisión y formación profesional en Formosa, Argentina.</p>
       <div class="footer-social">
@@ -2085,7 +2104,7 @@ window.addEventListener('load', () => {
   width: 100%; background: rgba(255,255,255,0.04);
   border: 1px solid rgba(199,165,106,0.18);
   color: var(--white); font-family: 'Inter', sans-serif;
-  font-size: 15px; font-weight: 300;
+  font-size: 16px; font-weight: 300;
   padding: 14px 16px 14px 42px;
   outline: none; transition: border-color 0.25s;
   -webkit-appearance: none;
